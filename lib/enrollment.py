@@ -16,6 +16,8 @@ class Student:
         return self._enrollments.copy()
 
 class Course:
+    def course_count(self):
+        return len(self._enrollments)
     def __init__(self, title):
 
         self.title = title
